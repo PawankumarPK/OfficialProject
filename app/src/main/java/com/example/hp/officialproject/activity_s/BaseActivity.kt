@@ -9,4 +9,6 @@ created by PAWAN KUMAR
 
 
 class BaseActivity : AppCompatActivity() {
+
+//hello base activity...
 }
