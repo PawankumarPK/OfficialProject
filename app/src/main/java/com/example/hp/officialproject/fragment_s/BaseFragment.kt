@@ -9,4 +9,5 @@ created by PAWAN KUMAR
 
 
 abstract class BaseFragment : Fragment() {
+    //base fragment
 }
