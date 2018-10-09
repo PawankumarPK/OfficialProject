@@ -1,7 +1,6 @@
 package com.example.hp.officialproject.activity_s
 
 import android.content.Context
-import android.content.Intent
 import android.os.Bundle
 import android.support.design.internal.NavigationMenuView
 import android.support.design.widget.NavigationView
@@ -12,7 +11,6 @@ import android.view.MenuItem
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import com.example.hp.officialproject.R
-import com.example.hp.officialproject.R.id.drawer_layout
 import com.example.hp.officialproject.fragment_s.HomeFragment
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_navigation_drawer.*
