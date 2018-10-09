@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/discountAmount"
+            android:title="Trash One" />
+
+        <item
+            android:id="@+id/OriginalAmount"
+            android:title="Trash Two" />
+
+        <item
+            android:id="@+id/DiscountRate"
+            android:title="Trash Three" />
+
+        <item
+            android:id="@+id/DoubleDisount"
+            android:title="Trash Four" />
+
+        <item
+            android:id="@+id/buyProVersion"
+            android:title="BuyProVersion" />
+    </group>
+
+</menu>
