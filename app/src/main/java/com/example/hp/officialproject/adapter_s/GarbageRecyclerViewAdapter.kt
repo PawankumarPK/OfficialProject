@@ -15,7 +15,7 @@ created by PAWAN KUMAR
 */
 
 
-class RecyclerViewHolder(private val context: Context,private val list: ArrayList<Home_garbage>) : RecyclerView.Adapter<RecyclerViewHolder.viewHolder>() {
+class GarbageRecyclerViewAdapter(private val context: Context, private val list: ArrayList<String>) : RecyclerView.Adapter<GarbageRecyclerViewAdapter.viewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): viewHolder {
       return viewHolder(LayoutInflater.from(context).inflate(R.layout.home_garbage_view_holder,parent,false))
     }
