@@ -32,10 +32,10 @@ class HomeFragment : BaseFragment() {
     }
 
     private fun onClickWasteGarbage() {
-        fragmentManager!!.beginTransaction().addToBackStack(null).replace(R.id.container_frame, HomeGarbage()).commit()
+        fragmentManager!!.beginTransaction().addToBackStack(null).replace(R.id.container_frame, WasteGarbage()).commit()
     }
 
     private fun onClickOtheromeGarbage() {
-        fragmentManager!!.beginTransaction().addToBackStack(null).replace(R.id.container_frame, HomeGarbage()).commit()
+        fragmentManager!!.beginTransaction().addToBackStack(null).replace(R.id.container_frame, OthersGarbage()).commit()
     }
 }

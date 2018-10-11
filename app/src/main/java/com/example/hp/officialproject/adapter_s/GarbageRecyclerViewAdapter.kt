@@ -15,7 +15,7 @@ created by PAWAN KUMAR
 */
 
 
-class GarbageRecyclerViewAdapter(private val context: Context, private val list: ArrayList<Dto_Home_garbage>) : RecyclerView.Adapter<GarbageRecyclerViewAdapter.viewHolder>() {
+class GarbageRecyclerViewAdapter(private val context: Context, private val list: ArrayList<Dto_Home_garbage>,private val itemClickCardview :onHomeGarbageCardViewClick ) : RecyclerView.Adapter<GarbageRecyclerViewAdapter.viewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): viewHolder {
       return viewHolder(LayoutInflater.from(context).inflate(R.layout.home_garbage_view_holder,parent,false))
     }
@@ -31,6 +31,10 @@ class GarbageRecyclerViewAdapter(private val context: Context, private val list:
         holder.bindItems(list[position])
     }
 
+    interface onHomeGarbageCardViewClick{
+        fun onItemClick(pos : Dto_Home_garbage)
+    }
+
     inner class viewHolder(view: View): RecyclerView.ViewHolder(view) {
 
         fun bindItems(data : Dto_Home_garbage){
@@ -40,7 +44,11 @@ class GarbageRecyclerViewAdapter(private val context: Context, private val list:
             itemView.mHomeItemsTextView.text = data.dtoTextViewItems
             itemView.mHomeItemsDescTextView.text = data.dtoTextviewDecription
 
+            itemView.mCardViewHomeGarbage.setOnClickListener { itemClick(data) }
 
+        }
+        private fun itemClick(pos: Dto_Home_garbage){
+             itemClickCardview.onItemClick(pos)
         }
 
     }

@@ -12,7 +12,7 @@ created by PAWAN KUMAR
 */
 
 
-class FragmentOther : BaseFragment() {
+class OthersGarbage : BaseFragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_others,container,false)

@@ -11,6 +11,7 @@ import com.example.hp.officialproject.R
 import com.example.hp.officialproject.activity_s.MainActivity
 import com.example.hp.officialproject.adapter_s.GarbageRecyclerViewAdapter
 import kotlinx.android.synthetic.main.fragment_garbage.*
+import java.util.*
 
 
 /*
@@ -23,6 +24,10 @@ class HomeGarbage : BaseFragment() {
     private val homeGarbageList: ArrayList<Dto_Home_garbage> = ArrayList()
     private lateinit var adapter : GarbageRecyclerViewAdapter
 
+    companion object {
+        var position = 0
+    }
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_garbage,container,false)
     }
@@ -32,7 +37,7 @@ class HomeGarbage : BaseFragment() {
         homeFragment = activity as MainActivity
 
         mHomeRecycler.layoutManager = LinearLayoutManager(homeFragment,LinearLayoutManager.VERTICAL,false)
-        adapter = GarbageRecyclerViewAdapter(homeFragment,homeGarbageList)
+        adapter = GarbageRecyclerViewAdapter(homeFragment,homeGarbageList,onGarbageClick )
         mHomeRecycler.adapter = adapter
 
         itemsArrayList()
@@ -54,6 +59,12 @@ class HomeGarbage : BaseFragment() {
 
     }
 
+    private val onGarbageClick = object : GarbageRecyclerViewAdapter.onHomeGarbageCardViewClick{
+        override fun onItemClick(pos: Dto_Home_garbage) {
+            position = pos
+        }
 
+
+    }
 
 }
