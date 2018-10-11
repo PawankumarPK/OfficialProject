@@ -3,16 +3,16 @@
 
     <string-array name="discount_off">
 
-        <item>10%</item>
-        <item>20%</item>
-        <item>30%</item>
-        <item>40%</item>
-        <item>50%</item>
-        <item>60%</item>
-        <item>70%</item>
-        <item>80%</item>
-        <item>90%</item>
-        <item>100%</item>
+        <item>UP TO 10% OFF</item>
+        <item>UP TO 20% OFF</item>
+        <item>UP TO 30% OFF</item>
+        <item>UP TO 40% OFF</item>
+        <item>UP TO 50% OFF</item>
+        <item>UP TO 60% OFF</item>
+        <item>UP TO 70% OFF</item>
+        <item>UP TO 80% OFF</item>
+        <item>UP TO 90% OFF</item>
+        <item>UP TO 100% OFF</item>
 
     </string-array>
 

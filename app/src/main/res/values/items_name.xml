@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="garbage_item_name">
+
+        <item>Home and Kitchen</item>
+        <item>Beverages</item>
+        <item>Household needs</item>
+        <item>Personal Care</item>
+        <item>Breakfast &amp; Diary</item>
+        <item>Biscuit, Snacks &amp; Chocos</item>
+        <item>Baby &amp; Kids</item>
+        <item>Pet Care</item>
+        <item>Frozen Food</item>
+        <item>Vegetable &amp; Fruits</item>
+
+    </string-array>
+
+</resources>

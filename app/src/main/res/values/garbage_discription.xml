@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="garbage_discription">
+
+        <item>Dog supplies,Cat Supplies</item>
+        <item>Dog supplies,Cat Supplies</item>
+        <item>Dog supplies,Cat Supplies</item>
+        <item>Dog supplies,Cat Supplies</item>
+        <item>Dog supplies,Cat Supplies</item>
+        <item>Dog supplies,Cat Supplies</item>
+        <item>Dog supplies,Cat Supplies</item>
+        <item>Dog supplies,Cat Supplies</item>
+        <item>Dog supplies,Cat Supplies</item>
+        <item>Dog supplies,Cat Supplies</item>
+
+
+    </string-array>
+</resources>
