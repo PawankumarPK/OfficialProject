@@ -20,8 +20,8 @@ created by PAWAN KUMAR
 class WasteGarbage : BaseFragment() {
 
     private lateinit var adapter: WasteGarbageViewAdapter
-
     private val wasteGarbageList : ArrayList<Dto_Home_garbage> = ArrayList()
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_waste, container, false)
     }
