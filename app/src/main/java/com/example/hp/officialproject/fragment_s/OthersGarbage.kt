@@ -44,6 +44,6 @@ class OthersGarbage : BaseFragment() {
         wasteGarbageList.add(Dto_Home_garbage(BitmapFactory.decodeResource(resources,R.drawable.plastic_garbage),"OFF UPTO 60%","This is first garbage","Garbege is more usefulll"))
 
 
-        //working
+        //working on Project
     }
 }
